@@ -1,0 +1,51 @@
+.main-bg {
+    background-image: url('../img/confetti.svg');
+    background-size: cover;
+    background-position: center center;
+    color: var(--white-color);
+}
+
+.white-bg {
+    background: var(--white-color);
+    color: var(--primary-color);
+}
+
+.main-content {
+    max-width: 130rem;
+    margin: 0 auto;
+    padding: 3rem var(--gap);
+}
+
+.section {
+    min-height: 100vh;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--gap);
+    counter-reset: grid-counter;
+}
+
+.grid h3 {
+    font-size: 1.8rem;
+    position: relative;
+    padding-left: 2rem;
+    padding-bottom: 2rem;
+}
+
+.grid h3::before {
+    counter-increment: grid-counter;
+    content: counter(grid-counter);
+    position: absolute;
+    font-size: 2rem;
+    font-style: italic;
+    top: -0.3rem;
+    left: -0.2rem;
+    transform: rotate(0.2deg);
+}
+
+body .full-width {
+    width: 100%;
+    flex: 1 1 100%;
+}
