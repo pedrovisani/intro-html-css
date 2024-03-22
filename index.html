@@ -24,7 +24,7 @@
 </head>
 
 <body>
-    <input id="close-menu" class="close-menu" type="checkbox" aria-label="close menu" role="button">
+    <input id="close-menu" class="close-menu" type="checkbox" aria-pressed="true" role="button">
     <label for="close-menu" title="close menu" class="close-menu-label"></label>
     <aside class="menu white-bg">
         <div class="main-content menu-content">
@@ -32,26 +32,26 @@
                 <a href="#home">LOGO</a>
             </h1>
             <nav>
-                <ul onclick="getElementById('close-menu').checked=false;">
+                <menu onclick="getElementById('close-menu').checked=false;">
                     <li><a href="#intro">intro</a></li>
                     <li><a href="#grid-one">grid-one</a></li>
                     <li><a href="#gallery">gallery</a></li>
                     <li><a href="#grid-two">grid-two</a></li>
                     <li><a href="#pricing">pricing</a></li>
                     <li><a href="#contact">contact</a></li>
-                </ul>
+                </menu>
             </nav>
         </div>
     </aside>
     <div id="home" class="menu-spacing"></div>
-    <section  class="section main-bg">
+    <section class="section main-bg">
         <div class="main-content intro-content">
             <div class="intro-text-content">
                 <h2>The latest report on global warming makes grim reading</h2>
-                <p>IN 1996 the European Union became the first significant political body to suggest that the goal of
-                    preventing “dangerous anthropogenic interference in the climate”, to which the world had signed on
-                    at the Rio Earth summit of 1992, meant, in practical terms, keeping global warming below 2°C
-                    relative to the late 1800s.</p>
+                <p>IN 1996 the <abbr title="European Union">UE</abbr> became the first significant political body to
+                    suggest that the goal of preventing “dangerous anthropogenic interference the climate”, to which the
+                    world had signed on at the Rio Earth summit of 1992, meant, in practical terms, keeping global
+                    warming below 2°C relative to the late 1800s.</p>
             </div>
             <div class="intro-img">
                 <img src="javascript.svg" alt="icon javascript">
@@ -73,8 +73,7 @@
                 the 1970s. William Nordhaus, a pioneer of climate economics who this week shared the Nobel prize for his
                 efforts (see Free exchange) seems to have been the first to use it as such.</p>
         </div>
-    </section>
-    <!--finish intro section-->
+    </section><!--finish intro section-->
 
     <!--start grid-one section-->
     <section id="grid-one" class="grid-one main-bg section">
@@ -98,8 +97,7 @@
                         interpretation of the Rio goal to the target on which the world agreed.</p>
                 </article>
             </div>
-        </div>
-        <!--finish grid-one section-->
+        </div><!--finish grid-one section-->
 
         <!--start gallery section-->
     </section>
@@ -127,8 +125,7 @@
                     <img src="http://source.unsplash.com/random/360x360?r=6" alt="random image from unsplash6">
                 </div>
             </div>
-        </div>
-        <!--finish gallery section-->
+        </div><!--finish gallery section-->
 
         <!--start grid-two section-->
     </section>
@@ -162,8 +159,7 @@
                         efforts towards 1.5°C”.</p>
                 </article>
             </div>
-        </div>
-        <!--finish grid-two section-->
+        </div><!--finish grid-two section-->
 
         <!--start pricing section-->
     </section>
@@ -214,8 +210,7 @@
                 </table>
             </div>
         </div>
-    </section>
-    <!--finish pricing section-->
+    </section><!--finish pricing section-->
 
     <!-- start contact section-->
     <section id="contact" class="intro section main-bg">
@@ -253,16 +248,12 @@
             </div>
         </div>
 
-    </section>
-    <!--finish contact section-->
+    </section><!--finish contact section-->
 
     <!--start footer-->
     <footer id="footer" class="footer white-bg">
         <p><a>Create by Pedro Visani</a></p>
-    </footer>
-    <!--finish footer-->
-
-    <a href="#home" class="back-to-top">⇧</a>
+    </footer> <!--finish footer-->
 
 </body>
 

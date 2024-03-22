@@ -1,6 +1,7 @@
 .close-menu {
     display: none;
 }
+
 .back-to-top {
     position: fixed;
     bottom: 1rem;
@@ -111,4 +112,7 @@
         min-height: 150vh;
     }
 
+    .menu-spacing {
+        height: 5rem;
+    }
 }
